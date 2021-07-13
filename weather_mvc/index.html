@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+<div class="search-container">
+    <div class="search-box">
+        <label for="city">Input city</label>
+        <input type="text"
+               id="city"
+               value="Dnipro"
+               placeholder="Lviv">
+        <button id="search-btn">
+            Search
+            <img src="search.svg"
+                 class="icon"
+                 alt="Search">
+        </button>
+    </div>
+</div>
+
+<div class="error"></div>
+
+<div class="output-container">
+    <div class="output">
+        <!--  comment start   -->
+        <div class="city-info"></div>
+        <div class="observe-time"></div>
+
+        <div class="conditions-wrap">
+            <div>Temperature</div>
+            <div class="condition"></div>
+            <div>Feels like</div>
+            <div class="condition"></div>
+            <div>Pressure</div>
+            <div class="condition"></div>
+            <div>Humidity</div>
+            <div class="condition"></div>
+            <div>Wind</div>
+            <div class="condition"></div>
+            <div>Clouds</div>
+            <div class="condition"></div>
+        </div>
+        <!--  comment end  -->
+    </div>
+</div>
+
+<script src="./app/main.js" type="module"></script>
+
+</body>
+</html>
